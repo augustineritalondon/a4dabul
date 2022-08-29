@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url(./assets/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: local('Mulish'), url(./assets/fonts/Mulish-Regular.ttf) format('truetype');
+}
+
+.a4dbul-container{
+  max-width: 93%;
+  margin: 0 auto;
+}
+
+.content_wrapper{
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.5s;
+}
+
+.a-active{
+  @apply font-bold text-primary
+}
