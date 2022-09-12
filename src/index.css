@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'), url(./assets/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Lato';
   src: local('Lato'), url(./assets/fonts/Lato-Regular.ttf) format('truetype');
 }

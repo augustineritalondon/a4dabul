@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily:{
         'Montserrat': ['Montserrat'],
+        'Montserrat-Regular': ['Montserrat-Regular'],
         'Lato': ['Lato'],
         'Mulish': ['Mulish'],
       },
