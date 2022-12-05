@@ -22,6 +22,31 @@ import weddingImage4 from './Rose-gold-engagement-ring-diamond-wedding-ring.png'
 import weddingImage5 from './wedding-buffet_620x350_41507350963.png'
 import footerImage from './istockphoto-1163184050-612x612 3.png'
 import spaSchedule from './spaSchedule.png'
+import landingImage from './Main_Images/landingimage.png'
+import homeImage from './Main_Images/homeImage.jpg'
+import newImage from './Main_Images/Jb work0696.jpg'
+import productImage from  './Main_Images/Jb work0715 1.jpg'
+import homeImage2 from './Main_Images/Jb work0785.jpg'
+import homeImage3 from './Main_Images/Jb work0709.jpg'
+import anceFaceScrub from './Main_Images/ance_face_rub.jpg'
+
+
+
+import swartyLotion from './Main_Images/swarty_lotion-removebg-preview.png'
+import swarty from  './Main_Images/swarty_lotion.jpg'
+import naturalGlow from './Main_Images/natural_glowing_oil.jpg'
+import extremeWhitening from './Main_Images/extreme_whitening.jpg'
+import herbalScrub from './Main_Images/herbal_scrub.jpg'
+import lighteningOil from './Main_Images/lightening_oil.jpg'
+import caramelFaceCream from './Main_Images/caramel_face_cream.jpg'
+import anceFaceCream from './Main_Images/ance_face_cream.jpg'
+import peach_whitening from './Main_Images/peach_whitening.jpg'
+import lighteningToner from './Main_Images/lightening toner.jpg'
+import anceToner from './Main_Images/ance toner.jpg'
+import whiteningAging from './Main_Images/whitening_Aging.jpg'
+import olive_oil from './Main_Images/olive_lotion.jpg'
+import herbalFaceSoap from './Main_Images/herbal_face_soap.jpg'
+
 
 const image = {
     logo,
@@ -48,6 +73,29 @@ const image = {
     weddingImage5,
     footerImage,
     spaSchedule,
+    landingImage,
+    homeImage,
+    homeImage2,
+    homeImage3,
+    newImage,
+    productImage,
+    anceFaceScrub,
+    
+
+
+    swarty,
+    naturalGlow,
+    olive_oil,
+    whiteningAging,
+    anceToner, 
+    lighteningToner,
+    peach_whitening,
+    anceFaceCream,
+    caramelFaceCream,
+    lighteningOil,
+    herbalScrub,
+    extremeWhitening,
+    herbalFaceSoap,
 }
 
 export default image

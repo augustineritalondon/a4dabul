@@ -1,12 +1,17 @@
 import React, {useState } from 'react'
 import { BreadcrumbBanner, Product } from '../../components/index'
+import { productData, data } from '../../data/productData'
 
 const SkinCare = () => {
 
   const [category, setCategory] = useState(false)
   const handleCategory = () => setCategory(!category)
 
-  console.log(category)
+  
+  const [active, setActive] = useState('Soap')
+  console.log(active)
+
+  const categoryList = ['Soap', 'Lotion', 'Face-Cream', 'Body-Scrub', 'Body-Oil', 'Toner']
 
   return (
     <>
@@ -17,28 +22,39 @@ const SkinCare = () => {
             <h1 className='hidden md:block'>Products</h1>
             <h1 className='md:hidden cursoro-pointer'>Categories</h1>
             <ul className={`mt-5 px-2 md:block ${category ? 'block': 'hidden'}`}>
-              <li className='my-3 cursor-pointer bg-secondary py-2 px-3 rounded-md text-white'>Body Cream</li>
-              <li className='my-3 cursor-pointer'>Body Soap</li>
-              <li className='my-3 cursor-pointer'>Body Oil</li>
-              <li className='my-3 cursor-pointer'>Body Scrub</li>
-              <li className='my-3 cursor-pointer'>Face Cream</li>
-              <li className='my-3 cursor-pointer'>Face Soap</li>
-              <li className='my-3 cursor-pointer'>Face Serum</li>
+              {/* <li className='my-3 cursor-pointer bg-secondary py-2 px-3 rounded-md text-white'>Body Cream</li> */}
+
+              {
+                categoryList &&
+                  categoryList.map((item, idx) => {
+                    return (
+                      <li className={`my-3 cursor-pointer ${active == item ? 'bg-secondary py-2 px-3 rounded-md text-white': ' bg-transparent text-primary'}`} onClick={() => setActive(item)} key={idx}>{item}</li>
+                    )
+                  })
+              }
             </ul>
           </div>
           <div className='w-full mt-10 md:mt-0 md:w-3/4 h-full'>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
+              {
+                data &&
+                  data.filter(item => item.category == active.toLowerCase())
+                  .map(item => {
+                    return(
+                      <Product key={item.id} data={item} />
+                    )
+                  })
+              }
+              {/* <Product />
               <Product />
               <Product />
               <Product />
-              <Product />
-              <Product />
-              <Product />
+              <Product /> */}
             </div>
 
             <div>
               {/* pagination */}
-              <div className='flex justify-center my-5'>
+              {/* <div className='flex justify-center my-5'>
                 <div>
                   <span className='mx-2  bg-primary p-2 px-3 text-white cursor-pointer rounded-full'>Prev</span>
                   <span className='mx-2  bg-primary p-2 px-3 text-white cursor-pointer rounded-full'>1</span>
@@ -46,7 +62,7 @@ const SkinCare = () => {
                   <span className='mx-2  bg-primary p-2 px-3 text-white cursor-pointer rounded-full'>3</span>
                   <span className='mx-2  bg-primary p-2 px-3 text-white cursor-pointer rounded-full'>Next</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

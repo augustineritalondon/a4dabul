@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Banner, Services, Schedule, BreadcrumbBanner, FAQDropdown } from '../components/index'
 import icons from '../assets/icons/icons'
+import image from '../assets/imgs/image'
 
 const About = () => {
   const [active, setActive] = useState(false)
@@ -62,9 +63,9 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className='relative grid grid-rows-2 my-8'>
-          <div className=' w-60 h-28 md:w-309 md:h-200 mx-auto lg:ml-10 lg:-mb-7 shadow-a-shadow bg-primary'></div>
-          <div className=' w-60 h-28 md:w-309 md:h-200 mx-auto lg:mr-10 lg:-mt-7 shadow-a-shadow bg-red-500'></div>
+        <div className='relative grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 my-8'>
+          <div className=' w-60 h-28 md:w-309 md:h-200 mx-auto lg:ml-10 lg:-mb-7 shadow-a-shadow bg-primary'><img src={image.homeImage3} alt="" /></div>
+          <div className=' w-60 h-28 md:w-309 md:h-200 mx-auto lg:mr-10 lg:-mt-7 shadow-a-shadow bg-red-500'><img src={image.productImage} alt="" /></div>
         </div>
       </div>
 

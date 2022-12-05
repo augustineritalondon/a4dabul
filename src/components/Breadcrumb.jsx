@@ -6,7 +6,7 @@ const Breadcrumb = () => {
         <div className='bg-primary py-2 block'>
             <div className='a4dbul-container flex justify-between'>
                 <div className='self-center flex justify-between'>
-                    <p className='text-white text-xs md:text-sm lg:text-base '>Free Call: 09044534569</p>
+                    <p className='text-white text-xs md:text-sm lg:text-base '>Free Call: +234 704 067 1352</p>
                     <p className='text-white text-xs md:text-sm lg:text-base ml-5'>Opening Hours: Mon-Fri: 9am - 6pm</p>
                 </div>
                 <ul className='md:flex self-center hidden'>
