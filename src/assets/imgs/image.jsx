@@ -22,7 +22,9 @@ import weddingImage4 from './Rose-gold-engagement-ring-diamond-wedding-ring.png'
 import weddingImage5 from './wedding-buffet_620x350_41507350963.png'
 import footerImage from './istockphoto-1163184050-612x612 3.png'
 import spaSchedule from './spaSchedule.png'
-import landingImage from './landingimage.png'
+
+
+import landingImage from './landingImage.png'
 import homeImage from './homeImage.jpg'
 import newImage from './Jb work0696.jpg'
 import productImage from  './Jb work0715 1.jpg'
