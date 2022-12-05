@@ -1,12 +1,12 @@
 import logo from './logo1.png';
 import heroImage from './heroImage.png';
 import scheduleImage from './pngtree-skin-care-plant-health-essential-oil-image_754279 2.png'
-import ProductImage1 from './istockphoto-1163184050-612x612 1.png'
+// import ProductImage1 from './istockphoto-1163184050-612x612 1.png'
 import shape1 from './home-1-287x380 1.png'
-import image2 from './istockphoto-1163184050-612x612 1.png'
-import skinImage from './skinImage.png'
-import skinImage2 from './skinImage2.png'
-import skinImage3 from './skinImage3.png'
+// import image2 from './istockphoto-1163184050-612x612 1.png'
+// import skinImage from './skinImage.png'
+// import skinImage2 from './skinImage2.png'
+// import skinImage3 from './skinImage3.png'
 import skinImage4 from './skinImage4.png'
 import spaBanner from './banner-img2 1.png'
 import saloonImage1 from './latest-female-hairstyles-in-Nigeria-40-539x620 3.png'
@@ -52,12 +52,12 @@ const image = {
     logo,
     heroImage,
     scheduleImage,
-    ProductImage1,
+    // ProductImage1,
     shape1,
-    image2,
-    skinImage,
-    skinImage2,
-    skinImage3,
+    // image2,
+    // skinImage,
+    // skinImage2,
+    // skinImage3,
     skinImage4,
     spaBanner,
     saloonImage1,
