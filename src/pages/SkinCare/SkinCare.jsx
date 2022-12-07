@@ -45,11 +45,6 @@ const SkinCare = () => {
                     )
                   })
               }
-              {/* <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product /> */}
             </div>
 
             <div>
