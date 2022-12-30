@@ -27,7 +27,7 @@ const Home = () => {
                     <div className='relative md:ml-5 lg:ml-10 z-10  self-center hidden md:block'><img src={image.newImage} alt="" className=' h-366 object-fill' /></div>
                     <div className='self-center'>
                         <h1 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat'>Who We Are</h1>
-                        <p className='my-5'>A4dbul is a ----------- In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.</p>
+                        <p className='my-5'>A4dabul is a conceirge of beauty and events, we connect the lines between the necessity of your beauty and our duty to deliver at the quality you desire,adding a speck of professionalism to all of our ventures unified under one banner, to make it A4dabul for you.</p>
                         <div className=' w-36 cursor-pointer'>
                             <Button><Link to='/about'>Read More</Link></Button>
                         </div>
@@ -43,9 +43,9 @@ const Home = () => {
                     <h1 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat text-center'>Affordable Skin Care</h1>
                     <div className='grid md:grid-cols-2 gap-5 mt-5 lg:mt-20'>
                         <div className='self-center py-5 '>
-                            <p>In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.</p>
+                            <p>A4dabul, the abode of beauticians and seasoned planners, as the custodians of beauty and style connect the dots between your needs and budgets with the delivery of the optimum quality you desire,with a touch of expertness,to give you the best for both body and events at A4dabul prices.</p>
 
-                            <h5 className='my-2'>Our natural skin care products includes:</h5>
+                            <h5 className='my-2 text-primary'>Our natural skin care products includes:</h5>
                             <ul className='grid grid-cols-2'>
                                 <li className='my-1 flex text-sm md:text-base'><img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' />Body Soap</li>
                                 <li className='my-1 flex text-sm md:text-base'><img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' />Body Lotion</li>
@@ -86,26 +86,31 @@ const Home = () => {
                     }
                 </div>
             </div>
-
+            
+            {/* affordable spa */}
             <div className='relative'>
                 <div className='absolute bg-black h-full w-full opacity-70'></div>
                 <img src={image.spaBanner} alt="" className='h-full w-full absolute -z-10' />
                 <div className=' w-90 lg:w-3/4 mx-auto relative z-10 py-16'>
                     <h1 className='text-secondary text-3xl lg:text-4xl xl:text-5xl font-Montserrat text-center'>Affordable Beauty Center</h1>
-                    <p className='text-white text-sm lg:text-base my-10 text-center'>In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.  Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit. </p>
-                    <ul className='text-secondary font-Montserrat text-sm lg:text-base grid grid-cols-2 lg:grid-cols-4 gap-5 text-center mb-10'>
-                        <li>Body Massage</li>
-                        <li>Facials</li>
-                        <li>Body Steaming</li>
-                        <li>Trainings</li>
+                    <p className='text-white text-sm lg:text-base my-10 text-center'>A4dabul beauty centre as the caretakers and aid to your beautification allays all your fear, as your hair,face and body would be given unique treatment through our distinguished products and services to make you look fabulous at A4dabul prices.</p>
+                    <ul className='text-secondary font-Montserrat text-sm lg:text-base grid grid-cols-2 lg:grid-cols-4 gap-5 lg:flex lg:justify-between mb-10'>
+                        <li className='text-center'>Body Wash</li>
+                        <li className='text-center'>Facials</li>
+                        <li className='text-center'>Massage</li>
+                        <li className='text-center'>Waxing</li>
+                        <li className='text-center'>Pedicure</li>
+                        <li className='text-center'>Cosmetics</li>
                     </ul>
                     <div className='w-full lg:w-1/5 mx-auto'>
-                        <Button>Book Appointment</Button>
+                        <a href='https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...'>
+                            <Button>Book Appointment</Button>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <Schedule image={image.spaSchedule} />
+            <Schedule image={image.spaSchedule} service='spa' />
 
             {/* Affordable Hair Sallon */}
             <div>
@@ -113,7 +118,7 @@ const Home = () => {
                     <div className='grid lg:grid-cols-2 gap-5 py-10'>
                         <div>
                             <h3 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat'>Affordable Hair Saloon Unisex</h3>
-                            <p className='text-sm lg:text-base my-6'>In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.</p>
+                            <p className='text-sm lg:text-base my-6'>We offer organic and cosmetic treatment and services for both gender including professional hair-cutting/barbing, styling, manicure and pedicure, make-up and makeovers, skincare, etc.</p>
                             <ul className='grid grid-cols-2 lg:grid-cols-3 gap-2'>
                                 <li className='my-1 flex text-sm md:text-base'><img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' />Hair cuts</li>
                                 <li className='my-1 flex text-sm md:text-base'><img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' />Coloring</li>
@@ -124,7 +129,9 @@ const Home = () => {
                             </ul>
 
                             <div className='w-full lg:w-2/5 mt-6'>
-                                <Button>Call 0987665785</Button>
+                                <a href="https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...">
+                                    <Button>Contact Us</Button>
+                                </a>
                             </div>
                         </div>
                         <div className='grid grid-cols-2 gap-3 mt-5 lg:mt-0'>
@@ -146,7 +153,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <Schedule image={image.saloonImage1} />
+            <Schedule image={image.saloonImage1} service='saloon' />
 
             {/* affordable wedding */}
             <div>

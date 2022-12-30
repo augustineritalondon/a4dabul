@@ -37,8 +37,10 @@ const SkinCareDetails = () => {
                 <h5>To place an order for this product, please contact us on whatsApp or through a phone call with the number below!</h5>
 
                 <div className='flex items-center mt-5'>
-                  <p>Tel: 09055543490</p>
-                  <button className=' bg-green-600 text-white rounded-full py-2 px-5 ml-5'>WhatsApp</button>
+                  <p>Tel: +234 913 8487 146</p>
+                  <a href='https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...'>
+                    <button className=' bg-green-600 text-white rounded-full py-2 px-5 ml-5'>WhatsApp</button>
+                  </a>
                 </div>
               </div>
             </div>

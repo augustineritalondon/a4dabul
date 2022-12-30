@@ -15,24 +15,24 @@ const About = () => {
 
   const faq = [
     {
-      question: 'What is the lorem of a lorem ipsum?',
-      answer: 'Amet minim non deserunt ullamco est sit aliqua dolor do amet sint amet minim non deserunt ullamco est sit aliqua.'
+      question: 'Can I return or exchange an item?',
+      answer: 'Currently, we do not offer Returns or Exchanges on orders. Due to our strict quality and safety protocols, we cannot resell any products that have left our warehouse. However, if you experience any issues with your product, please reach out to Customer Support at +234 913 8487 146 for immediate assistance.'
     },
     {
-      question: 'Where do I pay for my orders using my Lorem account?',
-      answer: 'Amet minim non deserunt ullamco est sit aliqua dolor do amet sint amet minim non deserunt ullamco est sit aliqua.'
+      question: 'Are products clinically tested?',
+      answer: 'A4dabul uses clinically-studied ingredients in many of our products. Science-backed results are very important to us and our customers. You can learn more about our clinically-studied ingredients on our product pages, where you can view the clinical studies and results.'
     },
     {
-      question: 'What is the lorem of a lorem ipsum?',
-      answer: 'Amet minim non deserunt ullamco est sit aliqua dolor do amet sint amet minim non deserunt ullamco est sit aliqua.'
+      question: 'Are products organic?',
+      answer: ' We prioritize organic ingredients wherever we can in our supplements. That is why we are proud to say that ingredients like tapioca, sugar and even some of our natural flavors are organic. Certain micronutrient ingredients, however, cannot be classified as organic. For these, we select the most premium forms we can find.'
     },
     {
-      question: 'Whose do I pay for my orders using my Lorem account?',
-      answer: 'Amet minim non deserunt ullamco est sit aliqua dolor do amet sint amet minim non deserunt ullamco est sit aliqua.'
+      question: 'Where can I reach out for press?',
+      answer: 'Inquiries: +234 913 8487 146'
     },
     {
-      question: 'That do I pay for my orders using my Lorem account?',
-      answer: 'Amet minim non deserunt ullamco est sit aliqua dolor do amet sint amet minim non deserunt ullamco est sit aliqua.'
+      question: 'What is A4dabul?',
+      answer: 'A4dabul is a conceirge of beauty and events, we connect the lines between the necessity of your beauty and our duty to deliver at the quality you desire,adding a speck of professionalism to all of our ventures unified under one banner, to make it A4dabul for you.'
     },
 
   ]
@@ -44,14 +44,15 @@ const About = () => {
       <div className='grid md:grid-cols-2 gap-5 w-90 mx-auto mt-10 md:0'>
         <div className='self-center'>
           <h1 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat'>Why Our Customers Choose Us</h1>
-          <p className='text-borderColor py-3'>In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.</p>
+          <p className='text-borderColor py-3'>A4dabul is a conceirge of beauty and events, we connect the lines between the necessity of your beauty and our duty to deliver at the quality you desire,adding a speck of professionalism to all of our ventures unified under one banner,to make it A4dabul for you.</p>
+          <p></p>
           <ul className='grid grid-cols-2'>
             <li>
               <div className='flex'>
                 <img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' /> <span className='font-semibold'>Opening Hours</span>
               </div>
-              <p className='ml-6 text-borderColor'>Monday-Friday: 8:00am–8:00pm</p>
-              <p className='ml-6 text-borderColor'>Saturday: 8:00am–6:00pm</p>
+              <p className='ml-6 text-borderColor'>Monday-Friday: 8:00am–5:030pm</p>
+              <p className='ml-6 text-borderColor'>Saturday: 10:00am–4:00pm</p>
               <p className='ml-6 text-borderColor'>Sunday: Closed</p>
             </li>
 
@@ -59,7 +60,7 @@ const About = () => {
               <div className='flex'>
                 <img src="https://img.icons8.com/nolan/20/asterisk-key.png" className='lg:mr-2' /> <span className='font-semibold'>Location</span>
               </div>
-              <p className='ml-6 text-borderColor'><span className='text-black'>Address:</span> Washington, USA 6036 Richmond hwy., VA, 2230</p>
+              <p className='ml-6 text-borderColor'><span className='text-black'>Address:</span> Lagos, Nigeria.</p>
             </li>
           </ul>
         </div>
@@ -77,22 +78,22 @@ const About = () => {
             <div className='bg-white text-primary hover:bg-primary hover:text-white py-16 px-3 text-center'>
               <img src={icons.skincare} alt="" className='mx-auto' />
               <h3 className='py-3 font-bold'>Skin Care</h3>
-              <p>Improve your look with our professional haircut & hairstyling services.</p>
+              <p>Entrust your beauty to professionals who really care about your style and look!.</p>
             </div>
             <div className='bg-white text-primary hover:bg-primary hover:text-white py-16 px-3 text-center'>
               <img src={icons.saloon} alt="" className='mx-auto' />
               <h3 className='py-3 font-bold'>Unisex Saloon</h3>
-              <p>Improve your look with our professional haircut & hairstyling services.</p>
+              <p>We offer a full range of hairdressing services for men and women..</p>
             </div>
             <div className='bg-white text-primary hover:bg-primary hover:text-white py-16 px-3 text-center'>
               <img src={icons.weddings} alt="" className='mx-auto' />
               <h3 className='py-3 font-bold'>Affordable Weddings</h3>
-              <p>Improve your look with our professional haircut & hairstyling services.</p>
+              <p>Get the best affordable wedding plan, with amazing thrift ideas!</p>
             </div>
             <div className='bg-white text-primary hover:bg-primary hover:text-white py-16 px-3 text-center'>
               <img src={icons.beautyspa} alt="" className='mx-auto' />
               <h3 className='py-3 font-bold'>Beauty Spa</h3>
-              <p>Improve your look with our professional haircut & hairstyling services.</p>
+              <p>Our various treatments includes message therapy, facials, etc.</p>
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@ const FAQDropdown = ({ answer, active }) => {
 
     return (
         <>
-            <p ref={contentHeight} className="content_wrapper text-left border border-primary border-t-transparent" style={active ? { height: contentHeight.current.scrollHeight } : { height: "0px" }}>
-                <span className='mt-3'>{answer}</span>
+            <p ref={contentHeight} className="content_wrapper text-left border border-primary border-t-transparent px-3 pt-1" style={active ? { height: contentHeight.current.scrollHeight } : { height: "0px" }}>
+                <span className='my-5'>{answer}</span>
             </p>
         </>
     )

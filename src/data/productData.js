@@ -107,17 +107,17 @@ export const data = [
         description: 'It is an organic wash that helps remove spots, wrinkles and improves the firmness of the face. ',
         ingredients: 'Egg white, Sandalwood, Vitamin c, Tea tree oil'
     },
+    // {
+    //     id: 9,
+    //     name: 'Wheatish Lotion',
+    //     image: `${image.peach_whitening}`,
+    //     price: '3000',
+    //     category: 'lotion',
+    //     description: 'This helps to tone from 1-2 shade. ',
+    //     ingredients: 'SYM powder which lightens the skin, Egg white firmness'
+    // },
     {
         id: 9,
-        name: 'Wheatish Lotion',
-        image: `${image.peach_whitening}`,
-        price: '3000',
-        category: 'lotion',
-        description: 'This helps to tone from 1-2 shade. ',
-        ingredients: 'SYM powder which lightens the skin, Egg white firmness'
-    },
-    {
-        id: 10,
         name: 'Extreme Whitening Lotion',
         image: `${image.extremeWhitening}`,
         price: '15000',
@@ -126,16 +126,16 @@ export const data = [
         ingredients: 'Glutathione is also a lightening agent Kojic acid'
     },
     {
-        id: 11,
+        id: 10,
         name: 'Lightening Face Cream',
-        image: `${image.peach_whitening}`,
+        image: `${image.newImage}`,
         price: '4500',
         category: 'face-cream',
         description: 'This is for light skin. It also helps to moisturize the skin and make it firm.',
         ingredients: 'Glutathione, Cucumber gel, Aloe Vera gel'
     },
     {
-        id: 12,
+        id: 11,
         name: 'Natural Glowing oil',
         image: `${image.naturalGlow}`,
         price: '7000',
@@ -144,7 +144,7 @@ export const data = [
         ingredients: 'Sunflower oil, SYM, Baobab oil'
     },
     {
-        id: 13,
+        id: 12,
         name: 'Lightening toner',
         image: `${image.lighteningToner}`,
         price: '3000',

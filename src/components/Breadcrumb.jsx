@@ -6,8 +6,8 @@ const Breadcrumb = () => {
         <div className='bg-primary py-2 block'>
             <div className='a4dbul-container flex justify-between'>
                 <div className='self-center flex justify-between'>
-                    <p className='text-white text-xs md:text-sm lg:text-base '>Free Call: +234 704 067 1352</p>
-                    <p className='text-white text-xs md:text-sm lg:text-base ml-5'>Opening Hours: Mon-Fri: 9am - 6pm</p>
+                    <p className='text-white text-xs md:text-sm lg:text-base '>Free Call: +234 913 8487 146</p>
+                    <p className='text-white text-xs md:text-sm lg:text-base ml-5'>Opening Hours: Mon-Fri: 8am - 5:30pm</p>
                 </div>
                 <ul className='md:flex self-center hidden'>
                     <li className='mx-2'><img src="https://img.icons8.com/ios-filled/18/ffffff/facebook-new.png" /></li>

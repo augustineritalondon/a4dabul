@@ -14,7 +14,7 @@ const Services = () => {
                             <div className='pb-10 lg:pb-16 md:px-6'>
                                 <img src={icons.saloon} alt="" className='mx-auto w-16 lg:w-20' />
                                 <h3 className=' text-xl 2xl:text-22 font-Montserrat py-5 text-primary'>Unisex Saloon</h3>
-                                <p className='text-sm lg:text-base'>We offer a full range of hairdressing services for men and women..</p>
+                                <p className='text-sm lg:text-base'>We offer a full range of hairdressing services for men and women.</p>
                             </div>
                         </div>
                         <div className='md:border-r md:border-r-borderColor'>
