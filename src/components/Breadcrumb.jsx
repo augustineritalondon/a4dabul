@@ -14,6 +14,7 @@ const Breadcrumb = () => {
                     <li className='mx-2'> <a href="https://www.a4dabul.com/"><img src="https://img.icons8.com/ios-glyphs/18/ffffff/google-logo--v1.png" /></a> </li>
                     <li className='mx-2'> <a href="https://www.instagram.com/A4dabul"><img src="https://img.icons8.com/ios-glyphs/18/ffffff/instagram-new.png" /></a> </li>
                     <li className='mx-2'> <a href="https://twitter.com/IrokoOmolola1"><img src="https://img.icons8.com/ios-glyphs/18/ffffff/twitter--v1.png" /></a> </li>
+                    <li className='mx-2'> <a href="/admin/login"><img src="https://img.icons8.com/glyph-neue/23/ffffff/administrator-female.png" alt="administrator-female"/></a> </li>
                 </ul>
             </div>
         </div>
