@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({children}) => {
   return (
-    <div className='bg-primary rounded-full px-3 py-2 text-white text-base text-center font-medium'>{children}</div>
+    <button type='submit' className='bg-primary w-full rounded-full px-3 py-2 text-white text-base text-center font-medium cursor-pointer'>{children}</button>
   )
 }
 

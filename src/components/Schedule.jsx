@@ -23,8 +23,7 @@ const Schedule = ({ image, service }) => {
                         </li>
                     </ul>
                     <p className='text-borderColor mb-5'>We will be glad to see you anytime at our salon.</p>
-
-                    <a href="https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...">
+                    <a href="https://api.WhatsApp.com/send?phone=2347040671352&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...">
                         <Button>Book Appointment</Button>
                     </a>
                 </div>
@@ -39,23 +38,23 @@ const Schedule = ({ image, service }) => {
                         <ul className='mt-5'>
                             <li className='my-1 2xl:my-3'>
                                 <p className='text-lg lg:text-xl 2xl:text-22 font-Montserrat text-primary'>Skin Care</p>
-                                <span className='text-white text-sm'>#8,000</span>
+                                {/* <span className='text-white text-sm'>#8,000</span> */}
                             </li>
                             <li className='my-1 2xl:my-3'>
                                 <p className='text-lg lg:text-xl 2xl:text-22 font-Montserrat text-primary'>Spa</p>
-                                <span className='text-white text-sm'>#8,000</span>
+                                {/* <span className='text-white text-sm'>#8,000</span> */}
                             </li>
                             <li className='my-1 2xl:my-3'>
                                 <p className='text-lg xl:text-xl 2xl:text-22 font-Montserrat text-primary'>Unisex Beauty Saloon</p>
-                                <span className='text-white text-sm'>#8,000</span>
+                                {/* <span className='text-white text-sm'>#8,000</span> */}
                             </li>
                             <li className='my-1 2xl:my-3'>
                                 <p className='text-lg lg:text-xl 2xl:text-22 font-Montserrat text-primary'>Weddings</p>
-                                <span className='text-white text-sm'>#8,000</span>
+                                {/* <span className='text-white text-sm'>#8,000</span> */}
                             </li>
                             <li className='my-1 2xl:my-3'>
                                 <p className='text-lg lg:text-xl 2xl:text-22 font-Montserrat text-primary'>Trainings</p>
-                                <span className='text-white text-sm'>#8,000</span>
+                                {/* <span className='text-white text-sm'>#8,000</span> */}
                             </li>
                         </ul>
                     </div>

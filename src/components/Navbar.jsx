@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className='bg-white py-3 border-b hidden md:block relative z-10'>
                 <div className='w-85 mx-auto flex justify-between'>
                     <ul className='flex self-center'>
-                        <li><NavLink to='/' activeclassname="a-active" className='text-base mx-4'>Home</NavLink> </li>
+                        <li><NavLink to='/' className='text-base mx-4'>Home</NavLink> </li>
                         <li><NavLink to='about' activeclassname="a-active" className='text-base mx-4'>About</NavLink></li>
                         <li><NavLink to='/services' activeclassname="a-active" className='text-base mx-4'>Services</NavLink></li>
 

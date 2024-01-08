@@ -14,20 +14,19 @@ const Footer = () => {
                         <div className='text-white'>
                             <h3 className='font-Montserrat text-lg lg:text-xl'>Call Today:</h3>
                             <ul className='text-borderColor'>
-                                <li>090034854954</li>
-                                <li>090034854954</li>
+                                <li>09138987146</li>
                             </ul>
                         </div>
                         <div className='text-white'>
                             <h3 className='font-Montserrat text-lg lg:text-xl'>Email:</h3>
                             <ul className='text-borderColor'>
-                                <li>info@gmail.com</li>
+                                <li>a4dabul@gmail.com</li>
                             </ul>
                         </div>
                         <div className='text-white'>
                             <h3 className='font-Montserrat text-lg lg:text-xl'>Location:</h3>
                             <ul className='text-borderColor'>
-                                <li>Lagos, Nigeria</li>
+                                <li>68 Lagos-Abeokuta expressway  Obada- oko, Abeokuta, Ogun State.</li>
                             </ul>
                         </div>
                         <div className='text-white'>

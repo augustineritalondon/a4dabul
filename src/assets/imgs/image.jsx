@@ -31,6 +31,7 @@ import productImage from  './Jb work0715 1.jpg'
 import homeImage2 from './Jb work0785.jpg'
 import homeImage3 from './Jb work0709.jpg'
 import anceFaceScrub from './ance_face_rub.jpg'
+import imageAdminLogin from './home_image.jpg'
 
 
 
@@ -47,6 +48,9 @@ import anceToner from './ance toner.jpg'
 import whiteningAging from './whitening_Aging.jpg'
 import olive_oil from './olive_lotion.jpg'
 import herbalFaceSoap from './herbal_face_soap.jpg'
+import person from './IMG_6544.jpg'
+import person1 from './IMG_6542.jpg'
+import person2 from './IMG_6545.jpg'
 
 
 const image = {
@@ -97,6 +101,11 @@ const image = {
     herbalScrub,
     extremeWhitening,
     herbalFaceSoap,
+
+    person,
+    person1,
+    person2,
+    imageAdminLogin
 }
 
 export default image

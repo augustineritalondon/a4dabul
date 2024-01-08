@@ -1,10 +1,12 @@
 import React from 'react'
-import { BreadcrumbBanner, Services, Banner, Schedule } from '../components'
+import { BreadcrumbBanner, Services, Banner, Schedule, Navbar, Footer } from '../components'
 import image from '../assets/imgs/image'
 
 const ServicesPage = () => {
   return (
     <>
+      <Navbar />
+
         <BreadcrumbBanner name="Services" />
         <div className='!my-10'>
             <div className='a4dbul-container text-center lg:w-3/5 py-12 mx-auto'>
@@ -23,6 +25,10 @@ const ServicesPage = () => {
 
             <Schedule image={image.homeImage}/>
         </div>
+
+
+      <Footer />
+
     </>
   )
 }

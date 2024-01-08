@@ -13,6 +13,7 @@ module.exports = {
         'borderColor': '#9B9B9B',
         'secondary': '#C6B8D9',
         'lightBanner': '#F8F6F9',
+        'lightPrimary': '#F3EDFB'
       },
       fontFamily:{
         'Montserrat': ['Montserrat'],
@@ -24,7 +25,9 @@ module.exports = {
         '22': '22px',
       },
       width: {
+        '5': '5%',
         '15': '10%',
+        '30': '30%',
         '85': '85%',
         '90': '90%',
         '445': '445px',
@@ -38,6 +41,8 @@ module.exports = {
       },
       height: {
         '90': '90vh',
+        '50': '53vh',
+        '80': '80vh',
         '445': '445px',
         '195': '170px',
         '327': '327px',
@@ -46,7 +51,8 @@ module.exports = {
         '366': '300px'
       },
       spacing: {
-        '20-a': '90%'
+        '20-a': '90%',
+        '10-a': '0.1%'
       },
       boxShadow: {
         'a-shadow': '2px 2px 20px rgba(0, 0, 0, 0.2)',

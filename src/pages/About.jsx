@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Banner, Services, Schedule, BreadcrumbBanner, FAQDropdown } from '../components/index'
+import { Button, Banner, Services, Schedule, BreadcrumbBanner, FAQDropdown, Navbar, Footer } from '../components/index'
 import icons from '../assets/icons/icons'
 import image from '../assets/imgs/image'
 
@@ -39,6 +39,7 @@ const About = () => {
 
   return (
     <>
+      <Navbar />
       <BreadcrumbBanner name="Overview" />
 
       <div className='grid md:grid-cols-2 gap-5 w-90 mx-auto mt-10 md:0'>
@@ -143,7 +144,8 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <Footer />
+                
     </>
   )
 }

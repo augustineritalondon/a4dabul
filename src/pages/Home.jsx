@@ -1,17 +1,45 @@
-import React from 'react'
-import { Button, Banner, Services, Schedule, Product } from '../components/index'
+import React, { useEffect } from 'react'
+import { Button, Banner, Services, Schedule, Product, Navbar, Footer } from '../components/index'
 import image from '../assets/imgs/image'
 import { Link } from 'react-router-dom'
-import { productData,data } from '../data/productData'
+import { productData, data } from '../data/productData'
+import { useSelector, useDispatch } from 'react-redux'
+import { getProducts, getCategories } from '../../service'
+import { addProduct, addCategory } from '../state/productSlice'
 
 const Home = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        getProducts().then((res) => {
+            const productsArray = [];
+            res.forEach((doc) => {
+                productsArray.push(doc.data());
+            });
+            dispatch(addProduct(productsArray));
+        });
+
+        getCategories().then((res) => {
+            const categoryArray = [];
+            res.forEach((doc) => {
+                categoryArray.push(doc.data());
+            });
+            dispatch(addCategory(categoryArray));
+        })
+    }, [])
+
+    const products = useSelector(state => state.products.product)
+
     return (
         <>
+            <Navbar />
+
             <div className=' w-90 mx-auto md:grid grid-cols-2 pt-10 md:pt-0'>
                 <div className='self-center'>
                     <h1 className='text-primary text-3xl lg:text-6xl font-Montserrat'>Experience the Best Affordable Services.</h1>
-                    <p className=' text-sm lg:text-base my-5'>Your beauty can truly grow with age and you can have fabulous skin all through your life, but it takes paying atttention to the quality of your skin care. 
-                    A4DBUL harnesses the best luscious emollient and fine oils, scrubs and creams to give your skin just what it needs. We offer a full range of hairdressing services for men and women, eyebrow and eyelash care . Entrust your beauty to professionals who really care about your style and look!</p>
+                    <p className=' text-sm lg:text-base my-5'>Your beauty can truly grow with age and you can have fabulous skin all through your life, but it takes paying atttention to the quality of your skin care.
+                        A4DBUL harnesses the best luscious emollient and fine oils, scrubs and creams to give your skin just what it needs. We offer a full range of hairdressing services for men and women, eyebrow and eyelash care . Entrust your beauty to professionals who really care about your style and look!</p>
                     <div className=' w-36'>
                         {/* <Button>Get Started</Button> */}
                     </div>
@@ -24,7 +52,7 @@ const Home = () => {
             <Banner>
                 <div className='grid md:grid-cols-2 gap-5 relative py-5 md:py-16'>
                     <div className='absolute bottom-5 z-0 hidden md:block'><img src={image.shape1} alt="" /></div>
-                    <div className='relative md:ml-5 lg:ml-10 z-10  self-center hidden md:block'><img src={image.newImage} alt="" className=' h-366 object-fill' /></div>
+                    <div className='relative md:ml-5 lg:ml-10 z-10  self-center hidden md:block'><img src={image.person1} alt="" className=' h-366 object-fill' /></div>
                     <div className='self-center'>
                         <h1 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat'>Who We Are</h1>
                         <p className='my-5'>A4dabul is a conceirge of beauty and events, we connect the lines between the necessity of your beauty and our duty to deliver at the quality you desire,adding a speck of professionalism to all of our ventures unified under one banner, to make it A4dabul for you.</p>
@@ -32,7 +60,7 @@ const Home = () => {
                             <Button><Link to='/about'>Read More</Link></Button>
                         </div>
                     </div>
-                    <div className=' self-center md:hidden'><img src={image.newImage} className='mx-auto' alt="" /></div>
+                    <div className=' self-center md:hidden'><img src={image.person1} className='mx-auto' alt="" /></div>
                 </div>
             </Banner>
 
@@ -64,7 +92,7 @@ const Home = () => {
                             <div className=''><img src={image.productImage} className='w-420 h-60 xl:w-480 xl:h-327 mx-auto rounded-3xl' alt="" /></div>
                             <div className='grid grid-cols-3 gap-4 -mt-20'>
                                 <div className=''><img src={image.anceFaceScrub} className=' shadow rounded-2xl' alt="" /></div>
-                                <div className=''><img src={image.newImage} className=' shadow rounded-2xl' alt="" /></div>
+                                <div className=''><img src={image.person} className=' shadow rounded-2xl' alt="" /></div>
                                 <div className=''><img src={image.homeImage3} className=' shadow rounded-2xl' alt="" /></div>
                             </div>
                         </div>
@@ -76,17 +104,17 @@ const Home = () => {
                 <h1 className='text-primary text-3xl lg:text-4xl xl:text-5xl font-Montserrat text-center my-10'>Featured Skin Products</h1>
                 <div className='grid md:grid-cols-4 lg:grid-cols-4 gap-5'>
                     {
-                        data && 
-                            data.filter((item, idx) => idx < 4)
+                        products &&
+                        products.filter((item, idx) => idx < 4)
                             .map((item, idx) => {
-                                return(
+                                return (
                                     <Product key={idx} data={item} />
                                 )
                             })
                     }
                 </div>
             </div>
-            
+
             {/* affordable spa */}
             <div className='relative'>
                 <div className='absolute bg-black h-full w-full opacity-70'></div>
@@ -102,8 +130,8 @@ const Home = () => {
                         <li className='text-center'>Pedicure</li>
                         <li className='text-center'>Cosmetics</li>
                     </ul>
-                    <div className='w-full lg:w-1/5 mx-auto'>
-                        <a href='https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...'>
+                    <div className='w-full lg:w-1/5 mx-auto'> 
+                        <a href='https://api.WhatsApp.com/send?phone=2347040671352&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...'>
                             <Button>Book Appointment</Button>
                         </a>
                     </div>
@@ -129,7 +157,7 @@ const Home = () => {
                             </ul>
 
                             <div className='w-full lg:w-2/5 mt-6'>
-                                <a href="https://api.WhatsApp.com/send?phone=2349138487146&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...">
+                                <a href="https://api.WhatsApp.com/send?phone=2347040671352&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...">
                                     <Button>Contact Us</Button>
                                 </a>
                             </div>
@@ -149,7 +177,7 @@ const Home = () => {
                     <img src={image.saloonImage3} alt="" className=' w-64 h-40 xl:h-52' />
                     <img src={image.saloonImage5} alt="" className=' w-64 h-40 xl:h-52' />
                     <img src={image.saloonImage6} alt="" className=' w-64 h-40 xl:h-52' />
-                    <img src={image.saloonImage5} alt="" className=' w-64 h-40 xl:h-52' />                    
+                    <img src={image.saloonImage5} alt="" className=' w-64 h-40 xl:h-52' />
                 </div>
             </div>
 
@@ -165,8 +193,10 @@ const Home = () => {
                             <span className='text-primary text-3xl xl:text-4xl italic'>Plan and Book your Wedding.</span>
                             <p className='text-sm lg:text-base my-5 hidden md:block'>In ante sapien, dapibus luctus aliquet a, accumsan sit amet dolor. Mauris id facilisis dolor. Donec malesuada, est eu dignissim eleifend, est nulla dignissim nisl. Fusce turpis massa, mattis sit.:</p>
 
-                            <div className='w-full lg:w-2/5 mt-6'>
-                                <Button>Contact Us</Button>
+                            <div className='w-full lg:w-2/5 mt-6 cursor-pointer'>
+                                <a href='https://api.WhatsApp.com/send?phone=2347040671352&text=Hello, I am texting from your website A4dabul, I would love to find out more about ...'>
+                                    <Button>Contact Us</Button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +207,7 @@ const Home = () => {
                     <img src={image.weddingImage4} alt="" className=' w-64 h-40 xl:h-52' />
                     <img src={image.weddingImage5} alt="" className=' w-64 h-40 xl:h-52' />
                     <img src={image.weddingImage2} alt="" className=' w-64 h-40 xl:h-52' />
-                    <img src={image.weddingImage3} alt="" className=' w-64 h-40 xl:h-52' />                    
+                    <img src={image.weddingImage3} alt="" className=' w-64 h-40 xl:h-52' />
                 </div>
             </div>
 
@@ -212,6 +242,7 @@ const Home = () => {
             {/* <BreadcrumbBanner name='Services' /> */}
 
             {/* <Product /> */}
+            <Footer />
         </>
     )
 }

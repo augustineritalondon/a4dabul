@@ -1,9 +1,13 @@
 import React from 'react'
 import { BreadcrumbBanner, FormInput, Button } from '../components'
 
+import {Navbar, Footer} from '../components/index'
+
 const Contact = () => {
   return (
     <>
+      <Navbar />
+
       <BreadcrumbBanner name='Contact' />
       <div className='a4dbul-container !my-20'>
         <div className='grid md:grid-cols-2 gap-10'>
@@ -30,7 +34,7 @@ const Contact = () => {
               <h1 className='text-primary font-Montserrat text-lg xl:text-xl'>Address:</h1>
               <div className='flex mt-3'>
                 <img src="https://img.icons8.com/material/24/675D8C/map--v1.png" className='h-fit mx-5'/>
-                <p className=''>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
+                <p className=''>68 Lagos-Abeokuta expressway  Obada- oko, Abeokuta, Ogun State.</p>
               </div>
             </div>
 
@@ -38,7 +42,7 @@ const Contact = () => {
               <h1 className='text-primary font-Montserrat text-lg xl:text-xl'>Phones:</h1>
               <div className='flex mt-3'>
                 <img src="https://img.icons8.com/material/24/675D8C/ringer-volume.png" className='h-fit mx-5'/>
-                <p className=''>090323973923, 08023233387</p>
+                <p className=''> 09138987146</p>
               </div>
             </div>
 
@@ -46,7 +50,7 @@ const Contact = () => {
               <h1 className='text-primary font-Montserrat text-lg xl:text-xl'>Email:</h1>
               <div className='flex mt-3'>
                 <img src="https://img.icons8.com/material/24/675D8C/mail.png" className='h-fit mx-5'/>
-                <p className=''>info@gmail.com</p>
+                <p className=''>a4dabul@gmail.com</p>
               </div>
             </div>
 
@@ -55,8 +59,8 @@ const Contact = () => {
               <div className='flex mt-3'>
                 <img src="https://img.icons8.com/material/24/675D8C/retro-alarm-clock.png" className='h-fit mx-5'/>
                 <ul className='h-full'>
-                  <li>Mon-Fri: 9 am – 6 pm</li>
-                  <li>Saturday: 9 am – 4 pm</li>
+                  <li>Mon-Fri: 8:00am – 5:30pm</li>
+                  <li>Saturday: 10am – 4pm</li>
                   <li>Sunday: Closed</li>
                 </ul>
               </div>
@@ -64,6 +68,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
+
     </>
   )
 }

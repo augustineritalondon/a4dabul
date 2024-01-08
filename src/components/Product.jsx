@@ -4,7 +4,6 @@ import image from '../assets/imgs/image'
 
 const Product = ({data}) => {
 
-  console.log(data)
   return (
     <>
         <div className='border border-secondary mb-10'>

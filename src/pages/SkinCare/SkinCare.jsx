@@ -1,6 +1,8 @@
 import React, {useState } from 'react'
-import { BreadcrumbBanner, Product } from '../../components/index'
+import { BreadcrumbBanner, Product, Navbar, Footer } from '../../components/index'
 import { productData, data } from '../../data/productData'
+import { useSelector } from 'react-redux'
+import { capitalize } from '@mui/material'
 
 const SkinCare = () => {
 
@@ -8,13 +10,15 @@ const SkinCare = () => {
   const handleCategory = () => setCategory(!category)
 
   
-  const [active, setActive] = useState('Soap')
-  console.log(active)
+  const [active, setActive] = useState('face cream')
 
-  const categoryList = ['Soap', 'Lotion', 'Face-Cream', 'Body-Scrub', 'Body-Oil', 'Toner']
+  const categories = useSelector(state => state.products.category)
+  const products = useSelector(state => state.products.product)
 
   return (
     <>
+      <Navbar />
+
       <BreadcrumbBanner name='Skin Care' />
       <div className='a4dbul-container !my-20'>
         <div className='md:flex justify-between'>
@@ -22,13 +26,12 @@ const SkinCare = () => {
             <h1 className='hidden md:block'>Products</h1>
             <h1 className='md:hidden cursoro-pointer'>Categories</h1>
             <ul className={`mt-5 px-2 md:block ${category ? 'block': 'hidden'}`}>
-              {/* <li className='my-3 cursor-pointer bg-secondary py-2 px-3 rounded-md text-white'>Body Cream</li> */}
 
               {
-                categoryList &&
-                  categoryList.map((item, idx) => {
+                categories &&
+                categories.map((item, idx) => {
                     return (
-                      <li className={`my-3 cursor-pointer ${active == item ? 'bg-secondary py-2 px-3 rounded-md text-white': ' bg-transparent text-primary'}`} onClick={() => setActive(item)} key={idx}>{item}</li>
+                      <li className={`my-3 cursor-pointer ${active == item.name ? 'bg-secondary py-2 px-3 rounded-md text-white': ' bg-transparent text-primary'}`} onClick={() => setActive(item.name)} key={idx}>{capitalize(item.name)}</li>
                     )
                   })
               }
@@ -37,11 +40,11 @@ const SkinCare = () => {
           <div className='w-full mt-10 md:mt-0 md:w-3/4 h-full'>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
               {
-                data &&
-                  data.filter(item => item.category == active.toLowerCase())
-                  .map(item => {
+                products &&
+                  products.filter(item => item.category == active.toLowerCase())
+                  .map((item, idx) => {
                     return(
-                      <Product key={item.id} data={item} />
+                      <Product key={idx} data={item} />
                     )
                   })
               }
@@ -62,6 +65,9 @@ const SkinCare = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
+
     </>
   )
 }
