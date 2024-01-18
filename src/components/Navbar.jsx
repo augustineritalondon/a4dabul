@@ -19,6 +19,8 @@ const Navbar = () => {
                     <div className=' w-15 self-center'><img src={image.logo} alt="" /></div>
                     <ul className='flex self-center'>
                         <li><NavLink to='/skin-care' activeclassname="a-active" className='text-base mx-4'>Skin Care</NavLink></li>
+                        <li><NavLink to='/saloon' activeclassname="a-active" className='text-base mx-4'>Saloon</NavLink></li>
+                        <li><NavLink to='/weddings' activeclassname="a-active" className='text-base mx-4'>Weddings</NavLink></li>
                         <li><NavLink to='/contact' activeclassname="a-active" className='text-base mx-4'>Contact</NavLink></li>
                     </ul>
                 </div>
@@ -54,7 +56,13 @@ const Navbar = () => {
                                 <img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/25/ffffff/external-cream-health-beauty-and-fashion-smashingstocks-hand-drawn-black-smashing-stocks-3.png" className='mr-5' /> 
                                 Skin Care
                             </NavLink>
-                            </li>
+                        </li>
+                        <li className=''>
+                            <NavLink to='/skin-care' onClick={()=>setIsOpen(!isOpen)} className='text-lg my-10 text-white font-medium flex justify-center'>
+                                <img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/25/ffffff/external-cream-health-beauty-and-fashion-smashingstocks-hand-drawn-black-smashing-stocks-3.png" className='mr-5' /> 
+                                Saloon
+                            </NavLink>
+                        </li>
                         <li className=''>
                             <NavLink to='/contact' onClick={()=>setIsOpen(!isOpen)} className='text-lg my-10 text-white font-medium flex justify-center' >
                                 <img src="https://img.icons8.com/fluency-systems-filled/25/ffffff/duplicate-contacts.png" className='mr-5' /> 

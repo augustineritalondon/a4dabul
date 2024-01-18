@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { Breadcrumb } from './components/index'
 import { Home, About, ServicesPage, Contact, SkinCare, SkinCareDetails, Dashboard, Login, Dindex, 
-          AddProduct, DeleteProduct, UpdateProduct, AllProducts, ProductDetails, NotFound } from './pages/index'
+          AddProduct, DeleteProduct, UpdateProduct, AllProducts, ProductDetails, NotFound, Saloon, Weddings } from './pages/index'
 import { Routes, Route } from 'react-router-dom';
 import { addProduct, addCategory } from './state/productSlice'
 import { getProducts, getCategories } from '../service'
@@ -43,6 +43,8 @@ function App() {
         <Route exact path='/services' element={<ServicesPage />} />
         <Route exact path='/skin-care' element={<SkinCare />} />
         <Route exact path='/skin-care/:name' element={<SkinCareDetails />} />
+        <Route exact path='/saloon' element={<Saloon />} />
+        <Route exact path='/weddings' element={<Weddings />} />
         <Route exact path='/contact' element={<Contact />} />
 
 

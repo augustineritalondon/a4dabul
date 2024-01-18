@@ -14,7 +14,7 @@ const Footer = () => {
                         <div className='text-white'>
                             <h3 className='font-Montserrat text-lg lg:text-xl'>Call Today:</h3>
                             <ul className='text-borderColor'>
-                                <li>09138987146</li>
+                                <li>+234 704 0671 352</li>
                             </ul>
                         </div>
                         <div className='text-white'>
