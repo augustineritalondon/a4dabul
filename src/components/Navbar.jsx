@@ -58,9 +58,15 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className=''>
-                            <NavLink to='/skin-care' onClick={()=>setIsOpen(!isOpen)} className='text-lg my-10 text-white font-medium flex justify-center'>
+                            <NavLink to='/saloon' onClick={()=>setIsOpen(!isOpen)} className='text-lg my-10 text-white font-medium flex justify-center'>
                                 <img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/25/ffffff/external-cream-health-beauty-and-fashion-smashingstocks-hand-drawn-black-smashing-stocks-3.png" className='mr-5' /> 
                                 Saloon
+                            </NavLink>
+                        </li>
+                        <li className=''>
+                            <NavLink to='/weddings' onClick={()=>setIsOpen(!isOpen)} className='text-lg my-10 text-white font-medium flex justify-center'>
+                                <img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/25/ffffff/external-cream-health-beauty-and-fashion-smashingstocks-hand-drawn-black-smashing-stocks-3.png" className='mr-5' /> 
+                                Weddings
                             </NavLink>
                         </li>
                         <li className=''>
